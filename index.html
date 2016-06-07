@@ -21,7 +21,14 @@
         <p class="view"><a href="https://github.com/ewertonsalles/firstphp.github.io">View the Project on GitHub <small>ewertonsalles/firstphp.github.io</small></a></p>
 <p>
 Welcome, Internet user from IP address
-<?php echo $_SERVER['REMOTE_ADDR']?>.
+
+  <p></p>
+<?php 
+$tmp = getenv("HTTP_CLIENT_IP");
+#echo $_SERVER['REMOTE_ADDR'];
+echo $tmp;
+?>.
+  <p></p>
 Hope you like my first PHP page.
 </body>
 
